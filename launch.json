@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch Elasticsearch Notebook",
+      "program": "${workspaceFolder}/${input:notebookFile}"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "notebookFile",
+      "description": "./elasticsearch.ipynb"
+    }
+  ]
+}
